@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
- <h1>HEllo</h1>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>MD IMDADUL HOSSAIN</h1>
+            <p>Python Programmer & Web Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate python programming and web developer with a love for creating beautiful and functional designs.
+                My expertise spans from branding and visual identity to responsive web development with Django.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of the project.</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of the project.</p>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out through any of the platforms below:</p>
+            <div class="contact-links">
+                <a href="mailto:titilhossain@email.com" class="btn">Email Me</a>
+                <a href="https://linkedin.com/in/md-imdadul-hossain-972054170" target="_blank" class="btn">LinkedIn</a>
+                <a href="https://github.com/ImdadulHossain" target="_blank" class="btn">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MD IMDADUL HOSSAIN. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
